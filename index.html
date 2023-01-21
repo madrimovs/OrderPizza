@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pizza</title>
+		<link rel="stylesheet" href="./styles/main.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="wrapper-inner">
+				<h2 class="wrapper-inner__title">Pitsa buyurtma qilish</h2>
+
+				<div class="wrapper-inner-holder">
+					<div class="wrapper-inner-holder-left">
+						<form class="form">
+							<label for="select" class="form-select-label">Noni qanday bo'lsin</label>
+							<select id="select" class="form-select">
+								<option selected disabled class="form-select__option">Noni qanday bo'lsin</option>
+								<option value="Yupqa" class="form-select__option">Yupqa</option>
+								<option value="O'rta" class="form-select__option">O'rta</option>
+								<option value="Qalin" class="form-select__option">Qalin</option>
+							</select>
+
+							<h4 class="form__title">Kattaligi</h4>
+							<div class="size-wrapper">
+								<input
+									data-size="25sm"
+									type="radio"
+									name="radio-size"
+									id="small-size"
+									class="size-wrapper__input"
+								/>
+								<label for="small-size" class="size-wrapper__label">25sm</label>
+
+								<input
+									data-size="30sm"
+									type="radio"
+									name="radio-size"
+									id="normal-size"
+									class="size-wrapper__input"
+								/>
+								<label for="normal-size" class="size-wrapper__label">30sm</label>
+
+								<input
+									data-size="35sm"
+									type="radio"
+									name="radio-size"
+									id="big-size"
+									class="size-wrapper__input"
+								/>
+								<label for="big-size" class="size-wrapper__label">35sm</label>
+							</div>
+
+							<h4 class="form__title">Ustiga nima solaylik</h4>
+							<div class="checkbox-wrapper">
+								<div class="hold">
+									<input type="checkbox" data-add="Pomidor" id="tomatoes" class="hold__input" />
+									<label for="tomatoes" class="hold__label">Pomidor</label>
+								</div>
+
+								<div class="hold">
+									<input type="checkbox" data-add="Tuzlangan bodring" id="pickles" class="hold__input" />
+									<label for="pickles" class="hold__label">Tuzlangan bodring</label>
+								</div>
+
+								<div class="hold">
+									<input type="checkbox" data-add="Kurka go'shti" id="meat" class="hold__input" />
+									<label for="meat" class="hold__label">Kurka go'shti</label>
+								</div>
+
+								<div class="hold">
+									<input type="checkbox" data-add="Qo'ziqorin" id="mushroom" class="hold__input" />
+									<label for="mushroom" class="hold__label">Qo'ziqorin</label>
+								</div>
+
+								<div class="hold">
+									<input type="checkbox" data-add="Zaytun" id="olive" class="hold__input" />
+									<label for="olive" class="hold__label">Zaytun</label>
+								</div>
+
+								<div class="hold">
+									<input type="checkbox" data-add="Qazi" id="sausage" class="hold__input" />
+									<label for="sausage" class="hold__label">Qazi</label>
+								</div>
+							</div>
+
+							<h4 class="form__title">Qo'shimchalar</h4>
+							<div class="checkbox-wrapper">
+								<div class="holdChek">
+									<input data-extra="Achchiq" type="checkbox" id="bitter" class="hold__inputt" />
+									<label for="bitter" class="hold__label">Achchiq</label>
+								</div>
+
+								<div class="holdChek">
+									<input data-extra="Sosiskalar" type="checkbox" id="sausages" class="hold__inputt" />
+									<label for="sausages" class="hold__label">Sosiskalar</label>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="wrapper-inner-holder-right">
+						<h4>Non: <span id="bread"></span></h4>
+						<h4>Kattaligi: <span id="sizeOfBread"></span></h4>
+						<h4>Ustida: <span id="ustida"></span></h4>
+
+						<ul id="li-wrapper" style="list-style: none">
+							<li></li>
+							<li></li>
+						</ul>
+						<h4>Qo'shimcha:</h4>
+						<ul id="additional-wrapper" style="list-style: none">
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/app.js"></script>
+	</body>
+</html>

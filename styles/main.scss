@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2,h3,h4,h5,h6,p,a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url('../images/pizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-inner {
+        width: 60%;
+        height: 65%;
+        box-sizing: border-box;
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 20px;
+        padding: 20px 50px;
+
+
+
+        &__title {
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        &-holder {
+            display: flex;
+
+            &-right  {
+                h4 {
+                    color: #fff;
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                    span {
+                        color: aquamarine;
+                    }
+                }
+
+                #li-wrapper {
+                    li {
+                        color: #fff;
+                        padding-left: 0 !important;
+                        margin-left: 0 !important;
+                    }
+                }
+
+                #additional-wrapper {
+                    li {
+                        color: #fff;
+                        padding-left: 0 !important;
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+
+            &-left {
+                width: 50%;
+            }
+        }
+
+        .form {
+            &-select-label {
+                display: block;
+                margin-bottom: 10px;
+                color: #fff;
+                cursor: pointer;
+            }
+            &-select {
+                padding: 5px;
+                border: none;
+                outline: none;
+                border-radius: 7px;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+
+            &__title {
+                font-size: 18px;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+
+            .size-wrapper {
+                display: flex;
+                margin-bottom: 20px;
+                &__input {
+                    visibility: hidden;
+
+                    &:checked + .size-wrapper__label{
+                        background-color: #fff;
+                        color: #000;
+                        border: 1px solid #000;
+                    }
+                }
+
+                &__label {
+                    width: 50px;
+                    height: 50px;
+                    display: block;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    &:not(:last-child) {
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            .checkbox-wrapper {
+                margin-bottom: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                width: 265px;
+                justify-content: space-between;
+                align-items: center;
+                user-select: none;
+                
+                .hold {
+                    &__label{
+                        cursor: pointer;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
