@@ -32,8 +32,13 @@ for (let i = 0; i < elInput.length; i++) {
 		elSizeBread.textContent = element.dataset.size;
 	});
 
-	elSizeBread.textContent = localStorage.getItem("size");
-	localStorage.setItem("size", element.dataset.size);
+	// elSizeBread.textContent = localStorage.getItem("size");
+	// localStorage.setItem("size", element.dataset.size);
+
+	elSizeBread.textContent = localStorage.getItem("input");
+	element.oninput = () => {
+		localStorage.setItem("input", element.value);
+	};
 }
 
 function checkArr(element, parent) {
